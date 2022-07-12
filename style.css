@@ -1,0 +1,15 @@
+
+
+
+
+ul{
+
+    color: yellow;
+    font-weight: bolder;
+    background-color: dimgray;
+}
+
+li{
+
+    display: inline;
+}
