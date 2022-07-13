@@ -2,28 +2,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>POMODORO.CLOCK</title>
-    <script type="text/javascript" src="clock.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
 
-<ul>
-    <li><span id="hor">#</span>:</li>
-    <li><span id="min">#</span>:</li>
-    <li><span id="seg">#</span></li>
 
+
+<div class="bg-danger d-block">
+<ul class="relogio d-inline-flex text-center p-0 ">
+    <li class="relogio p-2 align-baseline"><span id="hor">#</span>:</li>
+    <li class="relogio p-2 b"><span id="min">#</span>:</li>
+    <li class="relogio p-2"><span id="seg">#</span></li>
+</ul>
+</div>
+
+
+<div id="menu" class="mt-5 text-center p-3">
+    <ul class=" float-left p-2 border border-danger bg-light">
+    <li class="p-2 m-2"><button id="pause" class="btn btn-danger btn-lg">Pause</button> </li>
+    <li class="p-2 m-2"><button id="continue" class="btn btn-danger btn-lg">Continue</button></li>
+    <li class="p-2 m-2"><button id="reset" class="btn btn-danger btn-lg">Reset</button></li>
+    
+    </ul>
+    </div>
+    
+
+<div class="container mt-3">
+<div class="col w-50 mx-auto p-0 ">
+<ul class="text-center">
+<div class=""><img src="img/tomato-top.png" alt=""></div>
+<li class="bg-danger"></li>
+<li id="work" class="p-0 mx-auto text-warning bg-dark h-50 "><h1 id="h1W" class="p-0 display-4 m-0">#</h1></li>
+<li id="tomato-bottom"><h1 class=""><span id="minW">#</span> <span id="segW"></span></h1></li>
 
 </ul>
+</div>
+</div>
 
-<h1><span id="work">WORK</span> <span id="minW">#</span> <span id="segW"></span></h1>
-<h1><span id="rest">REST</span> <span id="minR">#</span> <span id="segR"></span></h1>
 <h1 id="mark">MARK</h1>
 
 
-    
+
+
 </body>
 </html>
