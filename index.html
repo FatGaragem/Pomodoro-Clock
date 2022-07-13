@@ -15,14 +15,36 @@
 
 
 
-<div class="bg-danger d-block">
-<ul class="relogio d-inline-flex text-center p-0 ">
-    <li class="relogio p-2 align-baseline"><span id="hor">#</span>:</li>
-    <li class="relogio p-2 b"><span id="min">#</span>:</li>
+<div id="clock" class="bg-dark text-warning d-block">
+<ul class="relogio d-inline-flex text-center p-0 mt-0 ">
+    <li class="relogio p-2 mt-0"><span id="hor">#</span>:</li>
+    <li class="relogio p-2"><span id="min">#</span>:</li>
     <li class="relogio p-2"><span id="seg">#</span></li>
 </ul>
 </div>
 
+<!-- NAVBAR START-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">What is Pomodoro clock?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">How it helps you?</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- NAVBAR END-->
 
 <div id="menu" class="mt-5 text-center p-3">
     <ul class=" float-left p-2 border border-danger bg-light">
@@ -34,19 +56,23 @@
     </div>
     
 
-<div class="container mt-3">
+<div class="container mt-4">
 <div class="col w-50 mx-auto p-0 ">
 <ul class="text-center">
 <div class=""><img src="img/tomato-top.png" alt=""></div>
 <li class="bg-danger"></li>
 <li id="work" class="p-0 mx-auto text-warning bg-dark h-50 "><h1 id="h1W" class="p-0 display-4 m-0">#</h1></li>
 <li id="tomato-bottom"><h1 class=""><span id="minW">#</span> <span id="segW"></span></h1></li>
-
 </ul>
 </div>
 </div>
 
-<h1 id="mark">MARK</h1>
+<div class="pomodorosCont border  d-inline-flex p-2 m-2 border border-danger bg-light">
+
+    <h1>Pomodoros:  <span id="mark"></span></h1>
+
+</div>
+
 
 
 

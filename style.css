@@ -45,4 +45,19 @@ html{
 
 .relogio{
     font-weight: bolder;
+    font-size: 15px;
+    ;
+}
+
+.pomodorosCont{
+    min-width: 300px;
+}
+
+#clock{
+    height: 30px;
+    
+}
+
+.navbar-brand{
+    margin-left: 10px;
 }
